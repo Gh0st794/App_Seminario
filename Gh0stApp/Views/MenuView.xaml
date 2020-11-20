@@ -8,6 +8,7 @@
              mc:Ignorable="d"
              x:Class="Gh0stApp.Views.MenuView">
     <ContentPage.Content>
+        
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
 
             <Button x:Name="btnFotos"                     
@@ -24,6 +25,11 @@
                     Text="WebService"
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{ x:Type local:WebServiceView }"/>
+            
+            <Button x:Name="btnSql"                     
+                    Text="Crud_SQLite"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{ x:Type local:ShowEmployeeView }"/>            
 
         </StackLayout>
     </ContentPage.Content>
